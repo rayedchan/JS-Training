@@ -14,5 +14,6 @@
 * [ES5] strict mode tightens the rules for certain behaviors ("use strict;") i.e. disallows the implicit auto-global variable declaration from omitting the var
 * Immediately Invoked Function Expression (IIFE) use to execute function; syntax (function IIFE(){...})();
 * Closure way to "remember" and continue to access a function's scope (its variables) even once the function has finished running
+* this keyword is dynamically bound based on how the function in question is executed
  
 

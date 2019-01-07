@@ -1,0 +1,30 @@
+Chapter 1: What is Scope?
+E1. Check your understanding so far. Make sure to play the part of Engine and have a "conversation" with the Scope:
+
+function foo(a) {
+	var b = a;
+	return a + b;
+}
+
+var c = foo( 2 );
+
+    Identify all the LHS look-ups (there are 3!).
+
+    Identify all the RHS look-ups (there are 4!).
+
+Note: See the chapter review for the quiz answers!
+
+LHS
+argument passed in foo(), a <- 2
+var b = <- (a <- 2)
+var c = <- (foo(2) <- 4)
+
+RHS
+foo function call
+var b = a <-2
+return a<-2 + b<-2
+
+"who's the target of the assignment (LHS)" and "who's the source of the assignment (RHS)"
+
+
+
